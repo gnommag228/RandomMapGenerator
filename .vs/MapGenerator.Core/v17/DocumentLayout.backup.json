@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BACEF58-25F2-472D-88E9-3607F520944B}|MapGenerator.ConsoleApp\\MapGenerator.ConsoleApp.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BACEF58-25F2-472D-88E9-3607F520944B}|MapGenerator.ConsoleApp\\MapGenerator.ConsoleApp.csproj|solutionrelative:mapgenerator.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.core\\mapbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|solutionrelative:mapgenerator.core\\mapbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.core\\mapdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|solutionrelative:mapgenerator.core\\mapdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.core\\maprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|solutionrelative:mapgenerator.core\\maprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.core\\tiletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|solutionrelative:mapgenerator.core\\tiletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.core\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|solutionrelative:mapgenerator.core\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.core\\imapgenerationstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|solutionrelative:mapgenerator.core\\imapgenerationstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|c:\\users\\vvk20\\source\\repos\\mapgenerator.core\\mapgenerator.core\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F1BED7-9895-4B9A-89CB-D13C0CF7C20D}|MapGenerator.Core\\MapGenerator.Core.csproj|solutionrelative:mapgenerator.core\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MapRepository.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\MapRepository.cs",
+              "RelativeDocumentMoniker": "MapGenerator.Core\\MapRepository.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\MapRepository.cs",
+              "RelativeToolTip": "MapGenerator.Core\\MapRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:51:09.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\MapDbContext.cs",
+              "RelativeDocumentMoniker": "MapGenerator.Core\\MapDbContext.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\MapDbContext.cs",
+              "RelativeToolTip": "MapGenerator.Core\\MapDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:48:53.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MapBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\MapBuilder.cs",
+              "RelativeDocumentMoniker": "MapGenerator.Core\\MapBuilder.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\MapBuilder.cs",
+              "RelativeToolTip": "MapGenerator.Core\\MapBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-15T21:02:06.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "MapGenerator.ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "MapGenerator.ConsoleApp\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T18:58:19.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Map.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\Map.cs",
+              "RelativeDocumentMoniker": "MapGenerator.Core\\Map.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\Map.cs",
+              "RelativeToolTip": "MapGenerator.Core\\Map.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T18:45:12.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IMapGenerationStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\IMapGenerationStrategy.cs",
+              "RelativeDocumentMoniker": "MapGenerator.Core\\IMapGenerationStrategy.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\IMapGenerationStrategy.cs",
+              "RelativeToolTip": "MapGenerator.Core\\IMapGenerationStrategy.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T13:56:22.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\Tile.cs",
+              "RelativeDocumentMoniker": "MapGenerator.Core\\Tile.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\Tile.cs",
+              "RelativeToolTip": "MapGenerator.Core\\Tile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T13:23:44.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TileType.cs",
+              "DocumentMoniker": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\TileType.cs",
+              "RelativeDocumentMoniker": "MapGenerator.Core\\TileType.cs",
+              "ToolTip": "C:\\Users\\vvk20\\source\\repos\\MapGenerator.Core\\MapGenerator.Core\\TileType.cs",
+              "RelativeToolTip": "MapGenerator.Core\\TileType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T13:23:25.42Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
