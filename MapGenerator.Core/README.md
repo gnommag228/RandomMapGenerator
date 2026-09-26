@@ -1,77 +1,80 @@
-# MapGenerator2D — Procedural Restaurant Layout Generator
 
-A lightweight, engine-agnostic C# library built with **.NET 9** for generating procedural 2D grid maps. Specifically designed for restaurant-themed roguelikes, management sims, or grid-based tactics games.
+# RandomMapGenerator
 
-The core architecture follows clean OOP principles, decouples generation logic from rendering engines (like Unity or Godot), and ensures map configurations are fully deterministic based on custom seeds.
+A small C#/.NET solution that procedurally generates 2D grid-based restaurant floor plans and persists them to a PostgreSQL database via Entity Framework Core.
 
----
+## What it does
 
-## Key Features
+- Generates a rectangular grid map made of tiles: `Wall`, `Floor`, `Table`, and `Partition`
+- Uses a seeded random generator, so the same seed always produces the same layout — generation is fully reproducible
+- Places walls around the border, then scatters tables (and occasional partitions next to some of them) across the floor
+- Saves each generated map to a PostgreSQL database as a serialized ASCII layout, along with its seed and dimensions
+- Prints the generated map directly to the console as ASCII art
 
-* **Engine-Agnostic Core:** Pure C# logic with zero external game engine dependencies. Easily integrates into Unity, Godot, or standalone console tools.
-* **Design Patterns:** Built around the **Strategy Pattern** (`IMapGenerationStrategy`) for customizable generation algorithms and a **Factory** (`MapGeneratorFactory`) for simple API access.
-* **Seed-Based Generation:** Deterministic daily layouts using customizable seed values.
-* **Structured Domain Model:** Grid-based tile mapping support (`Floor`, `Wall`, `Partition`, `Table`).
+## Project structure
 
----
+This is a Visual Studio solution (`MapGenerator.Core.sln`) with two projects:
 
-## Tech Stack
-- **Framework:** .NET 9 / C# 13
-- **ORM:** Entity Framework Core 9.0
-- **Database:** PostgreSQL 17
-- **Patterns:** Factory Method, Strategy Pattern, Repository Pattern
+| Project | Description |
+|---|---|
+| `MapGenerator.Core` | Class library with the domain model, generation logic, and EF Core persistence |
+| `MapGenerator.ConsoleApp` | Console app that generates a random map, saves it, and prints it |
 
-## Persistence & Database Integration
-The project uses EF Core with PostgreSQL to persist generated map instances along with their metadata.
-- **`EnsureCreatedAsync()`** handles lightweight schema creation automatically.
-- Maps are serialized into plain ASCII layout strings for efficient storage and inspection.
+### MapGenerator.Core
 
----
+- **`TileType`** — enum of the four possible tile kinds (`Wall`, `Floor`, `Table`, `Partition`)
+- **`Tile`** — a single grid cell (type + coordinates)
+- **`Map`** — the grid itself (`Tile[,]`), initialized as all-floor
+- **`IMapGenerationStrategy`** / **`RandomFillStrategy`** — the generation algorithm, implemented as a Strategy pattern so alternative generation algorithms can be swapped in without changing the rest of the code
+- **`MapBuilder`** — entry point (`MapBuilder.CreateRestaurantMap(width, height, seed)`) that runs the strategy and returns a finished `Map`
+- **`MapDbContext`** / **`MapEntity`** — EF Core context and the persisted representation of a map
+- **`MapRepository`** — serializes a `Map` into an ASCII string and saves it via EF Core (`SaveMapAsync`)
 
-## Project Structure
-```text
-MapGenerator2D/
-├── MapGenerator.Core/              # Domain logic & generation engine
-│   ├── IMapGenerationStrategy.cs   # Strategy interface
-│   ├── RestaurantLayoutStrategy.cs # Custom procedural layout logic
-│   ├── MapGeneratorFactory.cs      # Factory entry point
-│   ├── Map.cs                      # 2D Grid map representation
-│   └── Tile.cs                     # Tile definitions & TileType enum
-└── MapGenerator.ConsoleApp/
+### MapGenerator.ConsoleApp
+
+Picks a random width, height, and seed, builds a map, saves it to PostgreSQL, and renders it straight to the console.
+
+## Requirements
+
+- .NET 9 SDK
+- A running PostgreSQL server
+
+By default the app connects using:
+
 ```
----
-Usage Example:
-
-using MapGenerator.Core;
-
-// Generate a 25x20 restaurant layout for Day 13 seed
-Map restaurantMap = MapGeneratorFactory.CreateRestaurantMap(width: 25, height: 20, daySeed: 13);
-
-// Access grid tiles
-Tile tile = restaurantMap.Tiles[5, 10];
-Console.WriteLine($"Tile type at (5, 10): {tile.Type}");
-
----
-
-## Output Preview (Console Visualizer)
-
-```text
-#########################
-#.......................#
-#..T..TP.TP.T..T..T..T..#
-#.......................#
-#.........T..T..T..T..T.#
-#.......................#
-#..TP.T..TP....T..T..T..#
-#.......................#
-#########################
+Host=localhost;Port=5432;Database=map_generator_db;Username=postgres;Password=postgres
 ```
 
+If your local setup differs, update the connection string in `MapGenerator.Core/MapDbContext.cs`.
 
-//# — Wall / Perimeter
+## Running it
 
-. — Walkable Floor
+```bash
+git clone https://github.com/gnommag228/RandomMapGenerator.git
+cd RandomMapGenerator
+dotnet run --project MapGenerator.ConsoleApp
+```
 
-T — Table
+Each run:
+1. Picks a random width, height, and seed
+2. Generates a map and saves it to PostgreSQL
+3. Prints the seed that was used
+4. Renders the map to the console
 
-P — Partition / Screen
+## Example output
+
+```
+Map successfully generated and saved to PostgreSQL! Number of seed 482
+############################
+#..........................#
+#....T..........P...........#
+#...........................#
+#.......T....................#
+############################
+```
+
+(`#` = wall, `.` = floor, `T` = table, `P` = partition)
+
+## Status
+
+Personal learning project, built while studying C#, Entity Framework Core, and object-oriented design patterns (Strategy).
